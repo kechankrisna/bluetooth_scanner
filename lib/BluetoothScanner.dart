@@ -7,7 +7,7 @@ class BluetoothScanner {
   static const MethodChannel _channel =
       const MethodChannel('bluetooth_scanner');
 
-  static List<int> _bytes = List<int>();
+  static List<int> _bytes = [27, 64, 27, 36, 0, 0, 29, 33, 17, 28, 46, 84, 101, 120, 116, 32, 115, 105, 122, 101, 32, 50, 48, 48, 37, 10, 10, 10, 10, 10, 10, 29, 86, 48]; // List<int>();
 
   //startDiscovery
   static Future<bool> get startDiscovery async {

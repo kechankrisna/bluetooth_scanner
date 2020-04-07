@@ -17,7 +17,7 @@ void main() {
     channel.setMockMethodCallHandler(null);
   });
 
-  test('startScan', () async {
-    expect(await BluetoothScanner.startScan, '42');
+  test('startDiscovery', () async {
+    expect(await BluetoothScanner.startDiscovery, true);
   });
 }

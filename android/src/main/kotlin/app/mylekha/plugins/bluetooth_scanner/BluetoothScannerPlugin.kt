@@ -175,7 +175,7 @@ public class BluetoothScannerPlugin : FlutterPlugin, MethodCallHandler {
         var result: String = "write";
         try {
             if (bluetoothSocket!!.isConnected) {
-                bytes.forEach { bluetoothSocket!!.outputStream.write(it); }
+                bytes.map { bluetoothSocket!!.outputStream.write(it); } //write(it)
                 bluetoothSocket!!.close();
             }
             result = "completed!"
